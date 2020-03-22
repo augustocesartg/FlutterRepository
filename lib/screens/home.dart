@@ -15,7 +15,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     final VideosBloc videosBloc = BlocProvider.getBloc<VideosBloc>();
     final FavoritosBloc favBloc = BlocProvider.getBloc<FavoritosBloc>();
-    //videosBloc.inSearch.add('');
+    videosBloc.inSearch.add('');
     SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
 
     return Scaffold(
